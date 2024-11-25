@@ -1,0 +1,29 @@
+# Root of the configuration
+root = true
+
+# Global settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Settings for Java files
+[*.java]
+indent_style = tab 
+indent_size = 4
+
+# Settings for Angular HTML files
+[*.html]
+indent_style = tab 
+indent_size = 4 
+
+# Settings for JSON files
+[*.json]
+indent_style = tab 
+indent_size = 4 
+
+# Settings for JavaScript/TypeScript files
+[*.{js,ts}]
+indent_style = tab 
+indent_size = 4
