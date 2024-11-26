@@ -9,5 +9,4 @@ public class ConversessionApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ConversessionApplication.class, args);
 	}
-
 }
