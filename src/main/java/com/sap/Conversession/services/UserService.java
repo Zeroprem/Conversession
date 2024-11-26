@@ -21,5 +21,15 @@ public class UserService implements UserServicesMarkup{
 	        ur.save(u);
 	        return true;
 	}
+	public boolean validateUser(String email, String username, String password) {
+        if (email != null && ur.existsByEmail(email)) {
+            String storedPassword = ur.findPasswordByEmail(email);
+            return storedPassword.equals(password); // Validate by email
+        } else if (username != null && ur.existsByUsername(username)) {
+            String storedPassword = ur.findPasswordByUsername(username);
+            return storedPassword.equals(password); // Validate by username
+        }
+        return false; // User not found
+    }
 
 }
