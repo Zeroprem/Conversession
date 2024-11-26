@@ -1,4 +1,4 @@
-package com.sap.Conversession.services;
+package com.sap.Conversession.services.implementation;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.sap.Conversession.modal.UserModal;
 import com.sap.Conversession.repository.UserRepository;
+import com.sap.Conversession.services.UserServicesMarkup;
 @Service
 public class UserService implements UserServicesMarkup{
 
