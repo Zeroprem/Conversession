@@ -10,5 +10,4 @@ public class ConversessionApplication {
 		SpringApplication.run(ConversessionApplication.class, args);
 		
 	}
-
 }
