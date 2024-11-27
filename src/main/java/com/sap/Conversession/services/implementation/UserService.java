@@ -6,7 +6,9 @@ import org.springframework.stereotype.Service;
 
 import com.sap.Conversession.modal.UserModal;
 import com.sap.Conversession.repository.UserRepository;
-import com.sap.Conversession.services.UserServicesMarkup;
+
+import com.sap.Conversession.services.markups.UserServicesMarkup;
+
 @Service
 public class UserService implements UserServicesMarkup{
 
@@ -22,5 +24,17 @@ public class UserService implements UserServicesMarkup{
 	        ur.save(u);
 	        return true;
 	}
+
+	public boolean validateUser(String email, String username, String password) {
+        if (email != null && ur.existsByEmail(email)) {
+            String storedPassword = ur.findPasswordByEmail(email);
+            return storedPassword.equals(password); // Validate by email
+        } else if (username != null && ur.existsByUsername(username)) {
+            String storedPassword = ur.findPasswordByUsername(username);
+            return storedPassword.equals(password); // Validate by username
+        }
+        return false; // User not found
+    }
+
 
 }
