@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.sap.Conversession.modal.UserModal;
 import com.sap.Conversession.repository.UserRepository;
+import com.sap.Conversession.services.markups.UserServicesMarkup;
 @Service
 public class UserService implements UserServicesMarkup{
 
