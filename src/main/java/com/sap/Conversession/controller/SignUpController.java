@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sap.Conversession.modal.UserModal;
-import com.sap.Conversession.services.UserService;
+import com.sap.Conversession.services.implementation.UserService;
 @RestController
 
 public class SignUpController {
