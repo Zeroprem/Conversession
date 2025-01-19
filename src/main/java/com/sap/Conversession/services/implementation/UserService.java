@@ -1,4 +1,4 @@
-package com.sap.Conversession.services;
+package com.sap.Conversession.services.implementation;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,9 @@ import org.springframework.stereotype.Service;
 
 import com.sap.Conversession.modal.UserModal;
 import com.sap.Conversession.repository.UserRepository;
+
 import com.sap.Conversession.services.markups.UserServicesMarkup;
+
 @Service
 public class UserService implements UserServicesMarkup{
 
@@ -22,6 +24,7 @@ public class UserService implements UserServicesMarkup{
 	        ur.save(u);
 	        return true;
 	}
+
 	public boolean validateUser(String email, String username, String password) {
         if (email != null && ur.existsByEmail(email)) {
             String storedPassword = ur.findPasswordByEmail(email);
@@ -32,5 +35,6 @@ public class UserService implements UserServicesMarkup{
         }
         return false; // User not found
     }
+
 
 }
