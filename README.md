@@ -1,5 +1,4 @@
 # Conversession
-# Jay Mahakaal
 
 # Conversession - Video Conferencing Application
 
