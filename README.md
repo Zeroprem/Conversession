@@ -26,7 +26,7 @@ Conversession is a web-based video conferencing application built with **Java Sp
 - **JPA/Hibernate** for ORM.
 
 ### **Frontend**
-- **Angular** for the user interface.
+- **HTMl/CSS JS** for the user interface.
 - **WebRTC** for real-time video and audio streaming.
 - **HTML, CSS, JavaScript** for basic UI components.
 
