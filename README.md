@@ -2,7 +2,7 @@
 
 # Conversession - Video Conferencing Application
 
-Conversession is a web-based video conferencing application built with **Java Spring Boot**, **Angular**, and **PostgreSQL**. It allows users to create and join meetings, stream video and audio, chat, and manage participants during a session.
+Conversession is a web-based video conferencing application built with **Java Spring Boot**, **Javascript**, and **PostgreSQL**. It allows users to create and join meetings, stream video and audio, chat, and manage participants during a session.
 
 ---
 
